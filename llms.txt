@@ -1,0 +1,26 @@
+# Robinhood Stocks — Tokenized Stocks on Robinhood Chain Reference
+
+> An independent explainer of tokenized stocks on Robinhood Chain — the EVM layer 2 — what on-chain equity tokens are, how they differ from real shares, regional limits and the risks. Not affiliated with Robinhood.
+
+## Key Facts
+- Tokenized stock: a blockchain token designed to track a company's share price (an on-chain instrument issued by a provider), generally NOT direct legal share ownership
+- Robinhood Chain: described as an EVM-compatible Ethereum layer 2 oriented to tokenized assets; standard wallets connect, gas paid in ETH
+- Differences from real shares: voting, dividend treatment and legal claim depend on the issuer's structure; you rely on the issuer and its custody
+- Availability varies by jurisdiction — restricted or unavailable in many regions; eligibility is set by the actual provider
+- Risks: market + issuer/counterparty risk, smart-contract & custody risk, regulatory uncertainty, price divergence from the underlying, liquidity limits
+- Connecting a wallet does NOT grant free stock tokens — such offers are scams
+- This page does NOT offer or sell any security; it is informational and NOT investment advice
+- Independent resource — NOT affiliated with or endorsed by Robinhood
+
+## Internal Sections & App Navigation
+- [What are tokenized stocks?](#what)
+- [Robinhood Chain](#chain)
+- [Tokens vs real shares](#difference)
+- [How exposure works](#exposure)
+- [Regional availability](#availability)
+- [Risks & disclaimers](#risks)
+- [FAQ](#faq)
+- [Open App](dashboard/index.html)
+
+## Disclaimer
+Independent page. Not affiliated with or endorsed by Robinhood. Not an offer of securities. Availability and rights vary by jurisdiction and issuer. Not investment advice.

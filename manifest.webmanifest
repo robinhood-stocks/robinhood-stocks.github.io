@@ -1,0 +1,12 @@
+{
+  "name": "Robinhood Stocks",
+  "short_name": "Robinhood Stocks",
+  "description": "Independent explainer of tokenized stocks on Robinhood Chain — what they are, how they differ from real shares, regional limits and risks. Not affiliated with Robinhood.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "lang": "en",
+  "background_color": "#0a0e14",
+  "theme_color": "#0a0e14",
+  "icons": [{ "src": "eth.png", "sizes": "any", "type": "image/png", "purpose": "any" }]
+}
