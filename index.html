@@ -1,1410 +1,302 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Robinhood Stocks — How Commission-Free Stock Trading Works</title>
-<meta name="description" content="A factual guide to Robinhood Stocks: account types, fractional shares, order types, payment for order flow, extended hours, and how stock trading fits alongside Robinhood's crypto products.">
-<link rel="canonical" href="https://robinhood-stocks.github.io/">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Robinhood Stocks">
-<meta property="og:url" content="https://robinhood-stocks.github.io/">
-<meta property="og:image" content="https://robinhood-stocks.github.io/og.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Robinhood Stocks">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Robinhood Stocks — How Commission-Free Stock Trading Works</title>
+  <meta name="description" content="A factual guide to Robinhood Stocks: account types, fractional shares, order types, payment for order flow, extended hours, and how stock trading fits alongside Robinhood's crypto products.">
+  <link rel="canonical" href="https://robinhood-stocks.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Robinhood Stocks">
+  <meta property="og:description" content="A factual guide to Robinhood Stocks: account types, fractional shares, order types, payment for order flow, extended hours, and how stock trading fits alongside Robinhood's crypto products.">
+  <meta property="og:url" content="https://robinhood-stocks.github.io/">
+  <meta property="og:image" content="https://robinhood-stocks.github.io/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Robinhood Stocks">
+  <meta name="twitter:description" content="A factual guide to Robinhood Stocks: account types, fractional shares, order types, payment for order flow, extended hours, and how stock trading fits alongside Robinhood's crypto products.">
+  <meta name="twitter:image" content="https://robinhood-stocks.github.io/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Figtree:wght@500;600;700&display=swap">
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://robinhood-stocks.github.io/#website", "url": "https://robinhood-stocks.github.io/", "name": "Robinhood Stocks — How Commission-Free Stock Trading Works"}, {"@type": "WebPage", "@id": "https://robinhood-stocks.github.io/#webpage", "url": "https://robinhood-stocks.github.io/", "name": "Robinhood Stocks — How Commission-Free Stock Trading Works", "isPartOf": {"@id": "https://robinhood-stocks.github.io/#website"}, "description": "A factual guide to Robinhood Stocks: account types, fractional shares, order types, payment for order flow, extended hours, and how stock trading fits alongside Robinhood's crypto products.", "datePublished": "2026-10-11", "dateModified": "2026-10-11"}, {"@type": "SoftwareApplication", "name": "Robinhood Stocks", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://robinhood-stocks.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Trading bots"}, {"@type": "ListItem", "position": 3, "name": "Robinhood Stocks"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is there a minimum amount needed to start with Robinhood Stocks?", "acceptedAnswer": {"@type": "Answer", "text": "No. Accounts can be opened with no minimum deposit, and fractional share purchases allow a position to be opened with a small dollar amount rather than the price of a full share."}}, {"@type": "Question", "name": "How does Robinhood Stocks make money without charging commissions?", "acceptedAnswer": {"@type": "Answer", "text": "Revenue comes from payment for order flow, interest earned on uninvested cash balances, and a premium subscription tier, rather than from a fee charged on each individual trade."}}, {"@type": "Question", "name": "Can I trade stocks outside normal market hours?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Robinhood Stocks supports pre-market and after-hours sessions on many listed securities, and a smaller set of stocks supports an extended, near around-the-clock trading window."}}, {"@type": "Question", "name": "What is the difference between a market order and a limit order?", "acceptedAnswer": {"@type": "Answer", "text": "A market order fills immediately at the best available price, while a limit order only fills at a chosen price or better, trading speed for price control."}}, {"@type": "Question", "name": "How long does it take for stock trades to settle?", "acceptedAnswer": {"@type": "Answer", "text": "Robinhood Stocks follows the industry-wide T+1 settlement cycle, so cash from a sold position becomes available the next business day."}}, {"@type": "Question", "name": "Are Robinhood Stocks and Robinhood Crypto the same product?", "acceptedAnswer": {"@type": "Answer", "text": "No. They share one app and login but run on different infrastructure: stock trades settle through the equity market structure, while crypto trades settle on blockchains and are held through a separate entity."}}, {"@type": "Question", "name": "What does payment for order flow mean for a stock trade?", "acceptedAnswer": {"@type": "Answer", "text": "It means the order is routed to a market maker that pays the brokerage for the right to execute it, rather than being sent directly to an exchange, which is part of how the zero-commission model is funded."}}]}]}</script>
-<style>
-:root{--bg:#0D0F0A;--surface:#181C12;--text:#EEF2E6;--muted:#95997F;--accent:#A3E635;--accent-ink:#111600;--radius:15px;--display:"Figtree";--body:"Inter"}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 2rem;
-  background: var(--bg);
-  -webkit-text-size-adjust: 100%;
-}
-body {
-  margin: 0;
-  min-width: 280px;
-  color: var(--text);
-  background: var(--bg);
-  font-family: var(--body);
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.7;
-  -webkit-font-smoothing: antialiased;
-  overflow-wrap: break-word;
-}
-::selection {
-  color: var(--accent-ink);
-  background: var(--accent);
-}
-a {
-  color: var(--accent);
-  text-decoration-thickness: .075em;
-  text-underline-offset: .2em;
-  transition: color .18s ease, background .18s ease, border-color .18s ease;
-}
-a:hover {
-  color: var(--text);
-}
-a:focus-visible,
-summary:focus-visible,
-[tabindex]:focus-visible {
-  outline: 3px solid var(--accent);
-  outline-offset: 5px;
-  border-radius: calc(var(--radius) * .35);
-}
-img,
-svg,
-video {
-  max-width: 100%;
-  vertical-align: middle;
-}
-img,
-video {
-  height: auto;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0;
-  color: var(--text);
-  font-family: var(--display);
-  font-weight: 650;
-  line-height: 1.2;
-  text-wrap: balance;
-}
-p,
-ul,
-ol,
-dl,
-figure,
-blockquote {
-  margin-top: 0;
-}
-[hidden] {
-  display: none !important;
-}
-.cb65849 {
-  width: min(100% - 6rem, 1240px);
-  margin-inline: auto;
-}
-.cdeb73c {
-  position: absolute;
-  z-index: 20;
-  top: 1rem;
-  left: 1rem;
-  padding: .75rem 1.15rem;
-  transform: translateY(-180%);
-  border-radius: var(--radius);
-  color: var(--accent-ink);
-  background: var(--accent);
-  font-weight: 600;
-}
-.cdeb73c:focus {
-  transform: translateY(0);
-}
-.cd05d21 {
-  position: relative;
-  z-index: 1;
-  border-bottom: 1px solid color-mix(in srgb, var(--text) 10%, var(--bg));
-  background: var(--bg);
-}
-.c0a80c5 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  min-height: 88px;
-  padding-block: 1rem;
-}
-.c3b4a7c {
-  display: inline-flex;
-  align-items: center;
-  gap: .75rem;
-  color: var(--text);
-  font-family: var(--display);
-  font-size: 1.2rem;
-  font-weight: 650;
-  letter-spacing: -.04em;
-}
-.c902fb1 {
-  display: grid;
-  place-items: center;
-  width: 34px;
-  height: 34px;
-  border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--surface));
-  border-radius: calc(var(--radius) * .55);
-  color: var(--accent);
-  background: color-mix(in srgb, var(--accent) 8%, var(--surface));
-}
-.c902fb1 svg {
-  width: 19px;
-  height: 19px;
-  fill: none;
-  stroke: var(--accent);
-  stroke-width: 1.6;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-.c2ab762 {
-  display: inline-flex;
-  align-items: center;
-  gap: .8rem;
-  padding: .5rem 0;
-  color: var(--text);
-  font-size: .9rem;
-  font-weight: 600;
-  text-decoration: none;
-}
-.c2ab762:hover {
-  color: var(--accent);
-}
-.c2c4a97 {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-  border-bottom: 1px solid color-mix(in srgb, var(--accent) 15%, var(--bg));
-  background:
-    radial-gradient(ellipse at 95% 12%, color-mix(in srgb, var(--accent) 14%, transparent), color-mix(in srgb, var(--accent) 0%, transparent) 62%),
-    linear-gradient(130deg, var(--surface), color-mix(in srgb, var(--accent) 5%, var(--bg)) 70%, var(--bg));
-}
-.c2c4a97::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  width: 520px;
-  height: 520px;
-  right: -240px;
-  bottom: -310px;
-  border: 1px solid color-mix(in srgb, var(--accent) 15%, transparent);
-  border-radius: 50%;
-  box-shadow: 0 0 0 65px color-mix(in srgb, var(--accent) 3%, transparent), 0 0 0 130px color-mix(in srgb, var(--accent) 2%, transparent);
-  pointer-events: none;
-}
-.c33ddca {
-  padding-block: 1.2rem 3rem;
-}
-.cd5ed74 {
-  margin-bottom: 1.6rem;
-  color: var(--muted);
-  font-size: .8rem;
-  line-height: 1.6;
-}
-.c7b0070 {
-  display: inline;
-  color: var(--muted);
-  font-family: var(--body);
-  font-size: inherit;
-  text-decoration: none;
-}
-.c7b0070 a,
-a.c7b0070 {
-  color: var(--muted);
-  text-decoration: none;
-}
-.c7b0070 a:hover,
-a.c7b0070:hover {
-  color: var(--accent);
-  text-decoration: underline;
-}
-.cd5ed74 ol,
-.cd5ed74 ul,
-ol.c7b0070,
-ul.c7b0070 {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: .45rem .7rem;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-.cd5ed74 li {
-  display: inline;
-}
-.cd5ed74 [aria-current="page"] {
-  color: var(--text);
-}
-.cc52761 {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: .8rem;
-  margin-bottom: 1.35rem;
-  color: var(--accent);
-  font-size: .875rem;
-  font-weight: 600;
-}
-.cc4baaa {
-  padding-block: .3rem;
-}
-.c0abde2 {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 36px;
-  max-width: 180px;
-  padding: .4rem .65rem;
-  border: 1px solid color-mix(in srgb, var(--text) 9%, var(--surface));
-  border-radius: calc(var(--radius) * .6);
-  background: var(--surface);
-  box-shadow: 0 3px 10px color-mix(in srgb, var(--text) 4%, transparent);
-  color: var(--text);
-  font-size: .8rem;
-  line-height: 1;
-}
-.c0abde2:empty {
-  display: none;
-}
-.c0abde2 img,
-.c0abde2 svg {
-  display: block;
-  width: auto;
-  max-width: 148px;
-  height: 24px;
-  object-fit: contain;
-}
-.c2c4a97 h1 {
-  max-width: 1050px;
-  margin: 0 0 1.5rem;
-  font-family: var(--display);
-  font-size: clamp(2.7rem, 5.7vw, 5.1rem);
-  font-weight: 600;
-  line-height: 1.06;
-  letter-spacing: -.055em;
-  overflow-wrap: anywhere;
-}
-.c2c4a97 h1 em {
-  color: var(--accent);
-  font-style: normal;
-}
-.c2c4a97 h1 a {
-  color: inherit;
-}
-.cb57b27 {
-  max-width: 760px;
-  margin: 0 0 2.1rem;
-  color: var(--muted);
-  font-size: clamp(1.05rem, 1.6vw, 1.22rem);
-  line-height: 1.75;
-  text-wrap: pretty;
-}
-.c8b22a8 {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.7rem;
-  min-height: 54px;
-  padding: .85rem 1.35rem;
-  border: 1px solid var(--accent);
-  border-radius: var(--radius);
-  color: var(--accent-ink);
-  background: var(--accent);
-  box-shadow: 0 6px 18px color-mix(in srgb, var(--accent) 18%, transparent);
-  font-family: var(--body);
-  font-size: .95rem;
-  font-weight: 650;
-  line-height: 1.4;
-  text-decoration: none;
-  transition: background .2s ease, box-shadow .2s ease, transform .2s ease;
-}
-.c8b22a8:hover {
-  color: var(--accent-ink);
-  background: color-mix(in srgb, var(--accent) 92%, var(--text));
-  box-shadow: 0 9px 24px color-mix(in srgb, var(--accent) 24%, transparent);
-  transform: translateY(-2px);
-}
-.c088f0f {
-  font-family: var(--body);
-  font-size: 1.25em;
-  line-height: 1;
-}
-.cd9749b {
-  display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.82fr);
-  gap: clamp(2rem, 4vw, 3.75rem);
-  align-items: start;
-}
-.ce81879 {
-  min-width: 0;
-}
-.ce81879 .cb57b27 {
-  margin-bottom: 1.6rem;
-}
-.cdd7ca6 {
-  position: relative;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  padding: clamp(1.15rem, 2vw, 1.65rem);
-  border: 1px solid color-mix(in srgb, var(--accent) 20%, var(--surface));
-  border-radius: calc(var(--radius) * 1.4);
-  background: linear-gradient(158deg, color-mix(in srgb, var(--accent) 8%, var(--surface)), var(--surface) 46%);
-  box-shadow: 0 22px 60px -26px color-mix(in srgb, var(--text) 24%, transparent), 0 3px 12px -6px color-mix(in srgb, var(--accent) 14%, transparent);
-}
-.cdd7ca6::before {
-  content: "";
-  position: absolute;
-  inset: -1px 14% auto;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--accent) 60%, transparent), transparent);
-}
-.c7ec26a {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 0.6rem 1rem;
-  margin-bottom: 1rem;
-}
-.c7ec26a h2 {
-  margin: 0;
-  font-family: var(--display);
-  font-size: 1.15rem;
-  font-weight: 650;
-  letter-spacing: -0.03em;
-}
-.c4110c8 {
-  display: inline-flex;
-  align-items: center;
-  max-width: 100%;
-  padding: 0.28rem 0.62rem;
-  border: 1px solid color-mix(in srgb, var(--accent) 18%, transparent);
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--accent) 8%, var(--surface));
-  color: var(--accent);
-  font-size: 0.72rem;
-  font-weight: 600;
-  overflow-wrap: anywhere;
-}
-.cdeadbb .c8d5e21 {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.85rem;
-}
-.cdeadbb .c8d5e21 th,
-.cdeadbb .c8d5e21 td {
-  padding: 0.58rem 0;
-  border-bottom: 1px solid color-mix(in srgb, var(--text) 10%, transparent);
-  vertical-align: top;
-  text-align: left;
-  overflow-wrap: anywhere;
-}
-.cdeadbb .c8d5e21 tr:last-child th,
-.cdeadbb .c8d5e21 tr:last-child td {
-  border-bottom: 0;
-}
-.cdeadbb .c8d5e21 th {
-  width: 38%;
-  padding-right: 0.9rem;
-  color: var(--muted);
-  font-weight: 500;
-}
-.cdeadbb .c8d5e21 td {
-  color: var(--text);
-  font-weight: 550;
-}
-.cf64431 {
-  margin-top: 1.15rem;
-  width: 100%;
-}
-@media (max-width: 920px) {
-  .cd9749b {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 2rem;
-  }
-  .cdd7ca6 {
-    width: 100%;
-    max-width: 560px;
-  }
-}
-.summary-strip {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1rem;
-  margin-block: 1.5rem 4.5rem;
-}
-.summary-item {
-  min-width: 0;
-  padding: 1.2rem 1.35rem;
-  border: 1px solid color-mix(in srgb, var(--text) 9%, var(--surface));
-  border-radius: var(--radius);
-  background: var(--surface);
-  box-shadow: 0 3px 12px color-mix(in srgb, var(--text) 3%, transparent);
-}
-.summary-item strong {
-  display: block;
-  margin-bottom: .2rem;
-  color: var(--text);
-  font-family: var(--display);
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.4;
-  letter-spacing: -.02em;
-}
-.summary-item span {
-  display: block;
-  color: var(--muted);
-  font-size: .8rem;
-  line-height: 1.5;
-}
-.c8fc625 {
-  display: grid;
-  grid-template-columns: 235px minmax(0, 1fr);
-  align-items: start;
-  gap: clamp(2.5rem, 5vw, 5rem);
-  padding-bottom: 4.5rem;
-}
-.cf4f843 {
-  position: sticky;
-  top: 2rem;
-  min-width: 0;
-  max-height: calc(100dvh - 4rem);
-  overflow-y: auto;
-  overscroll-behavior: contain;
-  scrollbar-width: thin;
-  scrollbar-color: color-mix(in srgb, var(--muted) 35%, var(--surface)) var(--surface);
-  padding: .3rem .75rem 1rem .25rem;
-}
-.c374904 {
-  margin: 0 0 1.1rem;
-  color: var(--text);
-  font-family: var(--display);
-  font-size: .95rem;
-  font-weight: 650;
-  letter-spacing: -.02em;
-}
-.caeb8d0 {
-  display: grid;
-  gap: .3rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.caeb8d0 li {
-  min-width: 0;
-  margin: 0;
-  padding: 0;
-}
-.c49bddb {
-  position: relative;
-  display: block;
-  padding: .7rem .9rem .7rem 1.1rem;
-  border-inline-start: 2px solid color-mix(in srgb, var(--muted) 18%, var(--bg));
-  border-radius: 0 calc(var(--radius) * .55) calc(var(--radius) * .55) 0;
-  color: var(--muted);
-  font-family: var(--body);
-  font-size: .85rem;
-  font-weight: 450;
-  line-height: 1.5;
-  text-decoration: none;
-  overflow-wrap: anywhere;
-}
-.c49bddb:hover {
-  border-inline-start-color: color-mix(in srgb, var(--accent) 45%, var(--bg));
-  color: var(--text);
-  background: color-mix(in srgb, var(--accent) 5%, var(--bg));
-}
-.c49bddb[aria-current="location"] {
-  border-inline-start-color: var(--accent);
-  color: var(--accent);
-  background: color-mix(in srgb, var(--accent) 9%, var(--bg));
-  font-weight: 650;
-}
-.c91d6b2 {
-  margin: 1.65rem 0 0;
-  padding: 1.2rem 0 0;
-  border-top: 1px solid color-mix(in srgb, var(--text) 10%, var(--bg));
-  color: var(--muted);
-  font-size: .78rem;
-  line-height: 1.65;
-}
-.c22a167 {
-  min-width: 0;
-}
-.facts-panel {
-  padding: clamp(1.3rem, 3vw, 2.3rem);
-  margin-bottom: 3.75rem;
-  border: 1px solid color-mix(in srgb, var(--accent) 18%, var(--surface));
-  border-top: 3px solid var(--accent);
-  border-radius: var(--radius);
-  background: var(--surface);
-  box-shadow: 0 10px 35px color-mix(in srgb, var(--text) 5%, transparent);
-  scroll-margin-top: 2rem;
-}
-.panel-heading {
-  display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: .5rem 1.5rem;
-  justify-content: space-between;
-  margin-bottom: 1.4rem;
-}
-.panel-heading h2 {
-  margin: 0;
-  font-size: clamp(1.45rem, 2.3vw, 1.85rem);
-  letter-spacing: -.04em;
-}
-.panel-heading p {
-  margin: 0;
-  color: var(--muted);
-  font-size: .8rem;
-}
-.facts-content {
-  min-width: 0;
-  overflow-x: auto;
-  scrollbar-width: thin;
-  scrollbar-color: var(--muted) var(--surface);
-}
-.c8d5e21 {
-  width: 100%;
-  border-collapse: collapse;
-  color: var(--text);
-  font-family: var(--body);
-  font-size: .925rem;
-  line-height: 1.6;
-  text-align: left;
-}
-.c8d5e21 caption {
-  padding: 0 0 1rem;
-  color: var(--muted);
-  font-size: .85rem;
-  text-align: left;
-}
-.c8d5e21 th,
-.c8d5e21 td {
-  padding: 1.05rem .85rem;
-  border-bottom: 1px solid color-mix(in srgb, var(--text) 9%, var(--surface));
-  vertical-align: top;
-  overflow-wrap: anywhere;
-}
-.c8d5e21 th {
-  width: 37%;
-  color: var(--muted);
-  font-weight: 500;
-}
-.c8d5e21 thead th {
-  color: var(--text);
-  background: color-mix(in srgb, var(--accent) 5%, var(--surface));
-  font-weight: 650;
-}
-.c8d5e21 td {
-  font-weight: 550;
-}
-.c8d5e21 tr > :first-child {
-  padding-left: 0;
-}
-.c8d5e21 tr > :last-child {
-  padding-right: 0;
-}
-.c8d5e21 tbody:last-child tr:last-child > *,
-.c8d5e21 > tr:last-child > * {
-  border-bottom: 0;
-}
-.c8d5e21 td p:last-child,
-.c8d5e21 th p:last-child {
-  margin-bottom: 0;
-}
-.c0ee9ea {
-  min-width: 0;
-}
-.cbe6e1f {
-  min-width: 0;
-  margin: 0 0 3.4rem;
-  scroll-margin-top: 2rem;
-}
-.cbe6e1f + .cbe6e1f {
-  padding-top: 2.8rem;
-  border-top: 1px solid color-mix(in srgb, var(--text) 11%, var(--bg));
-}
-.ca5aea6 {
-  margin: 0 0 1.25rem;
-  color: var(--text);
-  font-family: var(--display);
-  font-size: clamp(1.65rem, 2.8vw, 2.35rem);
-  font-weight: 600;
-  line-height: 1.22;
-  letter-spacing: -.045em;
-}
-.cabfab4 {
-  color: var(--text);
-  font-family: var(--body);
-  font-size: 1rem;
-  line-height: 1.85;
-  overflow-wrap: anywhere;
-}
-.cabfab4 > :last-child {
-  margin-bottom: 0;
-}
-.cabfab4 p {
-  margin: 0 0 1.3rem;
-  text-wrap: pretty;
-}
-.cabfab4 h3 {
-  margin: 2rem 0 .9rem;
-  font-size: clamp(1.2rem, 2vw, 1.45rem);
-  font-weight: 600;
-  line-height: 1.35;
-  letter-spacing: -.025em;
-}
-.cabfab4 h4,
-.cabfab4 h5,
-.cabfab4 h6 {
-  margin: 1.6rem 0 .75rem;
-  font-size: 1.075rem;
-  line-height: 1.4;
-}
-.cabfab4 h3:first-child,
-.cabfab4 h4:first-child {
-  margin-top: 0;
-}
-.cabfab4 strong,
-.c8e36c3 strong {
-  color: var(--text);
-  font-weight: 650;
-}
-.cabfab4 ul,
-.cabfab4 ol,
-.c8e36c3 ul,
-.c8e36c3 ol {
-  margin: 1.2rem 0 1.6rem;
-  padding-left: 1.5rem;
-}
-.cabfab4 li,
-.c8e36c3 li {
-  padding-left: .4rem;
-  margin-block: .55rem;
-}
-.cabfab4 li::marker,
-.c8e36c3 li::marker {
-  color: var(--accent);
-  font-weight: 600;
-}
-.cabfab4 li > ul,
-.cabfab4 li > ol {
-  margin-block: .5rem;
-}
-.cabfab4 li p {
-  margin-bottom: .6rem;
-}
-.cabfab4 blockquote {
-  margin: 1.8rem 0;
-  padding: 1.3rem 1.5rem;
-  border-inline-start: 3px solid var(--accent);
-  border-radius: 0 var(--radius) var(--radius) 0;
-  background: color-mix(in srgb, var(--accent) 6%, var(--surface));
-  color: var(--text);
-  font-size: 1.05rem;
-}
-.cabfab4 blockquote > :last-child {
-  margin-bottom: 0;
-}
-.cabfab4 blockquote cite {
-  display: block;
-  margin-top: .9rem;
-  color: var(--muted);
-  font-size: .85rem;
-  font-style: normal;
-}
-.cabfab4 table {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  margin: 1.7rem 0;
-  overflow-x: auto;
-  border: 1px solid color-mix(in srgb, var(--text) 12%, var(--surface));
-  border-radius: var(--radius);
-  border-spacing: 0;
-  background: var(--surface);
-  font-family: var(--body);
-  font-size: .875rem;
-  line-height: 1.65;
-  text-align: left;
-  scrollbar-width: thin;
-  scrollbar-color: var(--muted) var(--surface);
-}
-.cabfab4 table caption {
-  padding: .9rem 1rem;
-  color: var(--muted);
-  font-size: .82rem;
-  text-align: left;
-}
-.cabfab4 th,
-.cabfab4 td {
-  min-width: 125px;
-  padding: 1rem 1.15rem;
-  border-bottom: 1px solid color-mix(in srgb, var(--text) 9%, var(--surface));
-  vertical-align: top;
-}
-.cabfab4 th {
-  color: var(--text);
-  background: color-mix(in srgb, var(--accent) 7%, var(--surface));
-  font-weight: 650;
-}
-.cabfab4 tbody tr:nth-child(even) {
-  background: color-mix(in srgb, var(--text) 2%, var(--surface));
-}
-.cabfab4 tbody:last-child tr:last-child > * {
-  border-bottom: 0;
-}
-.cabfab4 td > :last-child,
-.cabfab4 th > :last-child {
-  margin-bottom: 0;
-}
-.cabfab4 figure {
-  margin: 1.8rem 0;
-}
-.cabfab4 figure img {
-  display: block;
-  border-radius: var(--radius);
-}
-.cabfab4 figcaption {
-  margin-top: .7rem;
-  color: var(--muted);
-  font-size: .8rem;
-  line-height: 1.6;
-}
-.cabfab4 code,
-.c8e36c3 code {
-  padding: .1em .35em;
-  border-radius: calc(var(--radius) * .25);
-  background: color-mix(in srgb, var(--accent) 7%, var(--surface));
-  color: var(--text);
-  font-family: var(--body);
-  font-size: .9em;
-}
-.cabfab4 pre {
-  overflow-x: auto;
-  padding: 1.2rem;
-  border: 1px solid color-mix(in srgb, var(--text) 10%, var(--surface));
-  border-radius: var(--radius);
-  background: var(--surface);
-  color: var(--text);
-  font-family: var(--body);
-  font-size: .875rem;
-  line-height: 1.7;
-}
-.cabfab4 pre code {
-  padding: 0;
-  background: var(--surface);
-}
-.cabfab4 hr {
-  margin: 2rem 0;
-  border: 0;
-  border-top: 1px solid color-mix(in srgb, var(--text) 12%, var(--bg));
-}
-.cabfab4 dt {
-  margin-top: 1.1rem;
-  color: var(--text);
-  font-weight: 650;
-}
-.cabfab4 dd {
-  margin: .4rem 0 1rem;
-  color: var(--muted);
-}
-.c7e8a02 {
-  padding-top: 2.75rem;
-  border-top: 1px solid color-mix(in srgb, var(--text) 11%, var(--bg));
-  scroll-margin-top: 2rem;
-}
-.c7e8a02 > .ca5aea6 {
-  margin-bottom: 1.65rem;
-}
-.c2be9b9 {
-  margin: 0 0 .8rem;
-  border: 1px solid color-mix(in srgb, var(--text) 11%, var(--surface));
-  border-radius: var(--radius);
-  background: var(--surface);
-  box-shadow: 0 3px 12px color-mix(in srgb, var(--text) 3%, transparent);
-  overflow: clip;
-  transition: border-color .2s ease, box-shadow .2s ease;
-}
-.c2be9b9:hover {
-  border-color: color-mix(in srgb, var(--accent) 35%, var(--surface));
-}
-.c2be9b9[open] {
-  border-color: color-mix(in srgb, var(--accent) 35%, var(--surface));
-  box-shadow: 0 6px 20px color-mix(in srgb, var(--text) 4%, transparent);
-}
-.ced76b8 {
-  position: relative;
-  display: block;
-  padding: 1.35rem 3.8rem 1.35rem 1.4rem;
-  color: var(--text);
-  font-family: var(--display);
-  font-size: 1.025rem;
-  font-weight: 600;
-  line-height: 1.5;
-  letter-spacing: -.015em;
-  list-style: none;
-  cursor: pointer;
-}
-.ced76b8::-webkit-details-marker {
-  display: none;
-}
-.ced76b8::after {
-  content: "+";
-  position: absolute;
-  top: 1.3rem;
-  right: 1.35rem;
-  display: grid;
-  place-items: center;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: color-mix(in srgb, var(--accent) 9%, var(--surface));
-  color: var(--accent);
-  font-family: var(--body);
-  font-size: 1.15rem;
-  font-weight: 400;
-  line-height: 1;
-}
-.c2be9b9[open] > .ced76b8::after {
-  content: "−";
-}
-.c2be9b9 > .ced76b8:focus-visible {
-  outline-offset: -5px;
-}
-.c8e36c3 {
-  padding: 0 1.4rem 1.45rem;
-  color: var(--muted);
-  font-family: var(--body);
-  font-size: .95rem;
-  line-height: 1.8;
-}
-.c8e36c3 > :first-child {
-  margin-top: 0;
-}
-.c8e36c3 > :last-child {
-  margin-bottom: 0;
-}
-.c8e36c3 p {
-  margin-bottom: 1rem;
-}
-.c20f7ea {
-  padding-block: 3rem 3.6rem;
-  border-top: 1px solid color-mix(in srgb, var(--text) 10%, var(--bg));
-  background: color-mix(in srgb, var(--surface) 70%, var(--bg));
-  scroll-margin-top: 2rem;
-}
-.c724583 {
-  display: grid;
-  grid-template-columns: 235px minmax(0, 1fr);
-  gap: clamp(2.5rem, 5vw, 5rem);
-}
-.cfc87d5 h2 {
-  margin-bottom: .7rem;
-  font-size: 1.4rem;
-  letter-spacing: -.035em;
-}
-.cfc87d5 p {
-  margin: 0;
-  color: var(--muted);
-  font-size: .85rem;
-  line-height: 1.7;
-}
-.c224850 {
-  min-width: 0;
-}
-.cee5ff4 {
-  display: grid;
-  gap: .7rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-family: var(--body);
-}
-.c04c73c {
-  display: block;
-  min-width: 0;
-  padding: 1rem 1.2rem;
-  border: 1px solid color-mix(in srgb, var(--text) 9%, var(--surface));
-  border-radius: calc(var(--radius) * .75);
-  background: var(--surface);
-  color: var(--muted);
-  font-family: var(--body);
-  font-size: .875rem;
-  line-height: 1.7;
-  overflow-wrap: anywhere;
-}
-.c04c73c a,
-a.c04c73c {
-  color: var(--text);
-  text-decoration-color: color-mix(in srgb, var(--accent) 35%, var(--surface));
-  text-underline-offset: .25em;
-}
-.c04c73c a:hover,
-a.c04c73c:hover {
-  color: var(--accent);
-  text-decoration-color: var(--accent);
-}
-.c04c73c p {
-  margin: .4rem 0 0;
-}
-.c04c73c small {
-  color: var(--muted);
-  font-size: .8rem;
-}
-.c0955e5 {
-  border-top: 1px solid color-mix(in srgb, var(--text) 10%, var(--bg));
-  background: var(--bg);
-}
-.cfb758f {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1rem 2rem;
-  min-height: 100px;
-  padding-block: 1.5rem;
-}
-.c5455ac {
-  color: var(--text);
-  font-family: var(--display);
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: -.025em;
-}
-.c009647 {
-  margin: 0;
-  color: var(--muted);
-  font-size: .8rem;
-}
-.c009647 span {
-  color: var(--text);
-}
-@media (min-width: 1500px) {
-  .c33ddca {
-    padding-bottom: 6rem;
-  }
-  .cd5ed74 {
-    margin-bottom: 4.5rem;
-  }
-  .c8fc625 {
-    gap: 5.5rem;
-  }
-  .c724583 {
-    gap: 5.5rem;
-  }
-}
-@media (max-width: 1050px) {
-  .cb65849 {
-    width: calc(100% - 3rem);
-  }
-  .c8fc625,
-  .c724583 {
-    grid-template-columns: 190px minmax(0, 1fr);
-    gap: 2.25rem;
-  }
-  .summary-strip {
-    gap: .75rem;
-  }
-  .summary-item {
-    padding: 1rem;
-  }
-  .c49bddb {
-    font-size: .8rem;
-  }
-}
-@media (max-width: 760px) {
-  html {
-    scroll-padding-top: 1rem;
-  }
-  .c0a80c5 {
-    min-height: 72px;
-  }
-  .c33ddca {
-    padding-block: 1.25rem 3.25rem;
-  }
-  .cd5ed74 {
-    margin-bottom: 2.6rem;
-  }
-  .c2c4a97 h1 {
-    max-width: 100%;
-    font-size: clamp(2.45rem, 7.4vw, 3.6rem);
-    letter-spacing: -.045em;
-  }
-  .cb57b27 {
-    font-size: 1.05rem;
-  }
-  .summary-strip {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    margin-block: 1.2rem 2.5rem;
-  }
-  .c8fc625 {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 2.3rem;
-    padding-bottom: 3rem;
-  }
-  .cf4f843 {
-    position: static;
-    max-height: none;
-    padding: 1.2rem;
-    border: 1px solid color-mix(in srgb, var(--text) 10%, var(--surface));
-    border-radius: var(--radius);
-    background: var(--surface);
-  }
-  .c374904 {
-    margin-bottom: .8rem;
-  }
-  .caeb8d0 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: .4rem .8rem;
-  }
-  .c49bddb {
-    height: 100%;
-    padding-block: .7rem;
-    font-size: .825rem;
-  }
-  .c91d6b2 {
-    display: none;
-  }
-  .facts-panel {
-    margin-bottom: 2.5rem;
-  }
-  .cbe6e1f {
-    margin-bottom: 2.6rem;
-  }
-  .cbe6e1f + .cbe6e1f {
-    padding-top: 2.2rem;
-  }
-  .c724583 {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 1.5rem;
-  }
-  .c20f7ea {
-    padding-block: 2.5rem;
-  }
-  .cbe6e1f,
-  .facts-panel,
-  .c7e8a02,
-  .c20f7ea {
-    scroll-margin-top: 1rem;
-  }
-}
-@media (max-width: 440px) {
-  .cb65849 {
-    width: calc(100% - 2rem);
-  }
-  .c0a80c5 {
-    gap: 1rem;
-  }
-  .c3b4a7c {
-    gap: .5rem;
-    font-size: 1.05rem;
-  }
-  .c2ab762 {
-    gap: .45rem;
-    font-size: .8rem;
-  }
-  .cc52761 {
-    gap: .65rem;
-    margin-bottom: 1.1rem;
-  }
-  .c2c4a97 h1 {
-    font-size: 2.5rem;
-  }
-  .c8b22a8 {
-    width: 100%;
-    justify-content: space-between;
-  }
-  .summary-item {
-    padding: .9rem;
-  }
-  .summary-item strong {
-    font-size: .9rem;
-  }
-  .summary-item span {
-    font-size: .75rem;
-  }
-  .caeb8d0 {
-    grid-template-columns: minmax(0, 1fr);
-  }
-  .facts-panel {
-    padding: 1.15rem;
-  }
-  .c8d5e21 {
-    font-size: .85rem;
-  }
-  .c8d5e21 th,
-  .c8d5e21 td {
-    padding-block: .9rem;
-    padding-inline: .5rem;
-  }
-  .cabfab4 {
-    font-size: .95rem;
-    line-height: 1.8;
-  }
-  .cabfab4 blockquote {
-    padding: 1rem 1.1rem;
-  }
-  .ced76b8 {
-    padding: 1.1rem 3rem 1.1rem 1.1rem;
-    font-size: .95rem;
-  }
-  .ced76b8::after {
-    top: 1.1rem;
-    right: .9rem;
-  }
-  .c8e36c3 {
-    padding: 0 1.1rem 1.2rem;
-    font-size: .9rem;
-  }
-  .cfb758f {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: .6rem;
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-  *,
-  *::before,
-  *::after {
-    transition: none !important;
-  }
-  .c8b22a8:hover {
-    transform: none;
-  }
-}
-@media print {
-  body {
-    background: var(--surface);
-    font-size: 10pt;
-  }
-  .cb65849 {
-    width: 100%;
-  }
-  .cd05d21,
-  .cdeb73c,
-  .c8b22a8,
-  .cf4f843,
-  .c2c4a97::after {
-    display: none;
-  }
-  .c2c4a97 {
-    background: var(--surface);
-  }
-  .c33ddca {
-    padding-block: 1rem 2rem;
-  }
-  .cd5ed74 {
-    margin-bottom: 1.5rem;
-  }
-  .c2c4a97 h1 {
-    font-size: 32pt;
-  }
-  .summary-strip {
-    margin-bottom: 2rem;
-  }
-  .c8fc625,
-  .c724583 {
-    display: block;
-  }
-  .facts-panel,
-  .summary-item,
-  .c2be9b9 {
-    box-shadow: none;
-  }
-  .ca5aea6,
-  .cabfab4 h3 {
-    break-after: avoid;
-  }
-  .c2be9b9,
-  .c04c73c,
-  .cabfab4 tr {
-    break-inside: avoid;
-  }
-  .cfc87d5 {
-    margin-bottom: 1rem;
-  }
-}
-</style>
+  <style>
+    :root{--bg:#0D0F0A;--surface:#181C12;--text:#EEF2E6;--muted:#95997F;--accent:#A3E635;--accent-ink:#111600;--radius:15px;--display:"Figtree";--body:"Inter"}
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 2rem; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 400 1rem/1.7 var(--body); -webkit-font-smoothing: antialiased; }
+    a { color: var(--accent); text-underline-offset: .22em; }
+    a:hover { text-decoration-thickness: .12em; }
+    :focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+    ::selection { background: var(--accent); color: var(--accent-ink); }
+    h1, h2, h3, h4, h5, h6 { font-family: var(--display); line-height: 1.15; text-wrap: balance; }
+    p, h1, h2, h3 { margin-top: 0; }
+    img, svg { max-width: 100%; vertical-align: middle; }
+    .cb65849 { width: min(1180px, calc(100% - 3rem)); margin-inline: auto; }
+    .cdeb73c { position: absolute; z-index: 5; top: .5rem; left: 1rem; padding: .7rem 1rem; background: var(--surface); transform: translateY(-180%); border-radius: var(--radius); }
+    .cdeb73c:focus { transform: translateY(0); }
+    .cfa0753 { border-bottom: 1px solid color-mix(in srgb,var(--text) 10%,transparent); }
+    .c4ebf0e { min-height: 88px; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
+    .ca2922e { display: inline-flex; align-items: center; gap: .7rem; color: var(--text); font: 650 1.12rem/1.2 var(--display); text-decoration: none; }
+    .c5c6af1 { display: grid; place-items: center; width: 2.4rem; height: 2.4rem; border-radius: calc(var(--radius) * .6); background: var(--accent); color: var(--accent-ink); }
+    .c3201ae { width: 1.2rem; height: 1.2rem; fill: none; stroke: var(--accent-ink); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; flex: 0 0 auto; }
+    .c04e8cf { display: flex; align-items: center; gap: 1.8rem; }
+    .c04e8cf > a { font-size: .88rem; font-weight: 600; text-decoration: none; }
+    .c04e8cf > a:not(.c2ffe04) { color: var(--muted); }
+    .c2ffe04 { display: inline-flex; align-items: center; justify-content: center; gap: .8rem; min-height: 52px; padding: .85rem 1.4rem; border: 1px solid color-mix(in srgb,var(--accent-ink) 12%,transparent); border-radius: var(--radius); background: linear-gradient(135deg,var(--accent),color-mix(in srgb,var(--accent) 88%,var(--text))); color: var(--accent-ink); font: 650 .95rem/1.3 var(--body); text-decoration: none; box-shadow: 0 6px 18px color-mix(in srgb,var(--accent) 17%,transparent); transition: transform .18s ease, box-shadow .18s ease; }
+    .c2ffe04:hover { transform: translateY(-2px); box-shadow: 0 9px 24px color-mix(in srgb,var(--accent) 25%,transparent); }
+    .c4ebf0e .c2ffe04 { min-height: 42px; padding: .65rem 1rem; }
+    .cd5ed74 { padding-block: 1rem 0; color: var(--muted); font-size: .8rem; overflow-wrap: anywhere; }
+    .c7b0070 { color: var(--muted); }
+    .c7b0070 a, a.c7b0070 { color: var(--muted); text-decoration: none; }
+    .c7b0070 a:hover, a.c7b0070:hover { color: var(--accent); text-decoration: underline; }
+    .c7b0070 ol, .c7b0070 ul { display: flex; flex-wrap: wrap; gap: .5rem 1rem; padding: 0; margin: 0; list-style: none; }
+    .c2c4a97 { display: grid; grid-template-columns: minmax(0,1.05fr) minmax(0,1fr); gap: clamp(2rem,5vw,4.5rem); align-items: start; padding-block: 1.5rem 3rem; }
+    .c2d1c59 { display: inline-flex; align-items: center; gap: .55rem; margin-bottom: 1.3rem; color: var(--accent); font-size: .86rem; font-weight: 600; }
+    .c2d1c59::before { content: ""; width: .5rem; height: .5rem; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 5px color-mix(in srgb,var(--accent) 9%,transparent); }
+    h1 { margin-bottom: 1.4rem; font-size: clamp(2.5rem,4.7vw,4.35rem); font-weight: 600; letter-spacing: -.055em; overflow-wrap: anywhere; }
+    h1 em { color: var(--accent); font-style: normal; }
+    .cb56d51 { max-width: 48ch; margin-bottom: 2rem; color: var(--muted); font-size: 1.08rem; line-height: 1.8; }
+    .c214508 { position: relative; min-width: 0; padding: clamp(1.1rem,2.4vw,1.5rem); border: 1px solid color-mix(in srgb,var(--accent) 20%,var(--surface)); border-radius: calc(var(--radius) * 1.6); background: linear-gradient(155deg,color-mix(in srgb,var(--accent) 7%,var(--surface)),var(--surface) 40%); box-shadow: 0 24px 64px color-mix(in srgb,var(--text) 9%,transparent),0 4px 12px color-mix(in srgb,var(--accent) 6%,transparent); }
+    .c671fde { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .7rem; margin-bottom: 1rem; }
+    .c671fde h2 { margin: 0; font-size: 1.35rem; letter-spacing: -.035em; }
+    .c44de08 { display: inline-flex; align-items: center; gap: .4rem; padding: .3rem .65rem; border: 1px solid color-mix(in srgb,var(--accent) 16%,transparent); border-radius: 999px; background: color-mix(in srgb,var(--accent) 8%,var(--surface)); color: var(--accent); font-size: .72rem; font-weight: 600; }
+    .c44de08::before { content: ""; width: .35rem; height: .35rem; border-radius: 50%; background: var(--accent); }
+    .route { display: grid; grid-template-columns: minmax(0,1fr) auto minmax(0,1fr); align-items: center; gap: .8rem; padding: .8rem; margin-bottom: 1rem; border: 1px solid color-mix(in srgb,var(--text) 9%,transparent); border-radius: var(--radius); background: var(--surface); }
+    .endpoint { min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: .45rem; }
+    .endpoint:last-child { align-items: flex-end; }
+    .endpoint-label, .c773fbf { color: var(--muted); font-size: .78rem; font-weight: 500; }
+    .logo { display: flex; align-items: center; min-height: 36px; max-width: 100%; overflow-wrap: anywhere; font: 600 1rem/1.3 var(--display); }
+    .logo img, .logo svg { max-height: 36px; width: auto; max-width: 100%; object-fit: contain; }
+    .route-arrow { display: grid; place-items: center; width: 2.25rem; height: 2.25rem; border-radius: 50%; background: color-mix(in srgb,var(--accent) 9%,var(--surface)); }
+    .route-arrow .c3201ae { stroke: var(--accent); }
+    .c773fbf { display: block; margin-bottom: .5rem; color: var(--text); }
+    .amount-field { display: flex; align-items: center; gap: .75rem; padding: .8rem 1rem; border: 1px solid color-mix(in srgb,var(--text) 18%,transparent); border-radius: var(--radius); background: var(--bg); transition: border-color .18s ease; }
+    .amount-field:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb,var(--accent) 12%,transparent); }
+    .amount-field input { width: 100%; min-width: 0; padding: .2rem 0; border: 0; background: var(--bg); color: var(--text); font: 550 1.6rem/1.2 var(--display); font-variant-numeric: tabular-nums; }
+    .amount-field input:focus { outline: 0; }
+    .unit { color: var(--muted); font-size: .8rem; }
+    .cb59879 { margin: .45rem 0 .85rem; color: var(--muted); font-size: .74rem; }
+    .field-error { margin: .5rem 0; color: var(--text); font-size: .8rem; font-weight: 600; }
+    [hidden] { display: none !important; }
+    .estimate { padding: 1rem; border-radius: var(--radius); background: linear-gradient(120deg,color-mix(in srgb,var(--accent) 12%,var(--surface)),color-mix(in srgb,var(--accent) 4%,var(--surface))); }
+    .estimate-label { margin-bottom: .25rem; color: var(--muted); font-size: .8rem; }
+    .estimate-value { display: block; color: var(--text); font: 600 clamp(1.7rem,3vw,2.5rem)/1.3 var(--display); letter-spacing: -.04em; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+    .estimate-value small { color: var(--muted); font: 400 .8rem/1.4 var(--body); letter-spacing: 0; }
+    .estimate dl { display: grid; gap: .5rem; margin: .8rem 0 0; padding-top: .8rem; border-top: 1px solid color-mix(in srgb,var(--accent) 15%,transparent); font-size: .8rem; }
+    .estimate dl div { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .25rem 1rem; }
+    .estimate dt { color: var(--muted); }
+    .estimate dd { margin: 0; font-weight: 600; font-variant-numeric: tabular-nums; }
+    .method { margin-block: .7rem; color: var(--muted); font-size: .75rem; }
+    .method summary { width: fit-content; color: var(--text); cursor: pointer; }
+    .method p { margin: .65rem 0 0; }
+    .c214508 > .c2ffe04 { width: 100%; }
+    .c239827 { padding: .8rem 1rem; border: 1px solid color-mix(in srgb,var(--text) 10%,transparent); border-radius: var(--radius); background: var(--surface); }
+    .c0fd3df { margin-bottom: .45rem; }
+    .cc65412 { display: flex; align-items: center; gap: .75rem; }
+    .ce6a572 { flex: 1; min-width: 0; padding: 0; border: 0; background: transparent; color: var(--text); font: 550 1.55rem/1.2 var(--display); font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+    .ce6a572:focus { outline: 0; }
+    .c4ead4a { position: relative; display: inline-flex; align-items: center; gap: .5rem; flex: none; padding: .4rem 1.5rem .4rem .5rem; border: 1px solid color-mix(in srgb,var(--text) 13%,transparent); border-radius: 999px; background: var(--bg); }
+    .c382233 { width: 22px; height: 22px; border-radius: 50%; object-fit: contain; flex: none; }
+    .ccb8b11 { border: 0; background: transparent; color: var(--text); font: 600 .95rem/1 var(--body); cursor: pointer; appearance: none; -webkit-appearance: none; }
+    .ccb8b11:focus { outline: 0; }
+    .c4ead4a::after { content: ""; position: absolute; right: .7rem; width: .42rem; height: .42rem; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: translateY(-2px) rotate(45deg); pointer-events: none; }
+    .c34f40b { margin-top: .4rem; color: var(--muted); font-size: .78rem; font-variant-numeric: tabular-nums; }
+    .c39bca4 { position: relative; z-index: 1; display: grid; place-items: center; width: 2.4rem; height: 2.4rem; margin: -.55rem auto; padding: 0; border: 3px solid var(--surface); border-radius: 50%; background: color-mix(in srgb,var(--accent) 13%,var(--surface)); color: var(--accent); cursor: pointer; transition: transform .2s ease, background .2s ease; }
+    .c39bca4 svg { width: 1.1rem; height: 1.1rem; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .c39bca4:hover { transform: rotate(180deg); background: color-mix(in srgb,var(--accent) 20%,var(--surface)); }
+    .c511e74 { display: grid; gap: .5rem; margin: 1rem 0 0; padding-top: .9rem; border-top: 1px solid color-mix(in srgb,var(--accent) 15%,transparent); font-size: .82rem; }
+    .c511e74 div { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .2rem 1rem; }
+    .c511e74 dt { color: var(--muted); }
+    .c511e74 dd { margin: 0; font-weight: 600; font-variant-numeric: tabular-nums; }
+    .c4b78ce > .c2ffe04 { width: 100%; margin-top: 1.05rem; }
+    .cb27153 { padding: 2rem; border: 1px solid color-mix(in srgb,var(--text) 10%,transparent); border-radius: calc(var(--radius) * 1.3); background: var(--surface); }
+    .cdcb3cb { margin-bottom: 1.3rem; font-size: 1.65rem; font-weight: 550; letter-spacing: -.035em; }
+    .cc45bd7 { max-width: 100%; overflow-x: auto; }
+    .c8d5e21 { width: 100%; border-collapse: collapse; text-align: left; font-size: .92rem; }
+    .c8d5e21 caption { padding-bottom: 1rem; text-align: left; color: var(--muted); }
+    .c8d5e21 th, .c8d5e21 td { padding: 1rem 1.1rem; border-bottom: 1px solid color-mix(in srgb,var(--text) 9%,transparent); vertical-align: top; overflow-wrap: anywhere; }
+    .c8d5e21 th { color: var(--muted); font-weight: 500; }
+    .c8d5e21 thead { background: color-mix(in srgb,var(--accent) 5%,var(--surface)); }
+    .c8d5e21 tbody tr:last-child > * { border-bottom: 0; }
+    .ce13e8a { max-width: 820px; padding-block: 4rem 2rem; }
+    .cbe6e1f { margin-bottom: 3.3rem; }
+    .ca5aea6 { margin: 0 0 1.1rem; font: 550 clamp(1.6rem,3vw,2.2rem)/1.2 var(--display); letter-spacing: -.035em; }
+    .cabfab4 { color: var(--muted); line-height: 1.85; overflow-wrap: anywhere; }
+    .cabfab4 p { margin-bottom: 1.2rem; }
+    .cabfab4 strong, .cabfab4 h3, .cabfab4 h4 { color: var(--text); }
+    .cabfab4 ul, .cabfab4 ol { padding-left: 1.3rem; }
+    .cabfab4 li { padding-left: .3rem; margin-block: .55rem; }
+    .cabfab4 li::marker { color: var(--accent); }
+    .cabfab4 blockquote { margin: 1.5rem 0; padding: 1rem 1.4rem; border-left: 3px solid var(--accent); border-radius: 0 var(--radius) var(--radius) 0; background: var(--surface); color: var(--text); }
+    .cabfab4 img { height: auto; border-radius: var(--radius); }
+    .cabfab4 pre { overflow-x: auto; padding: 1rem; border-radius: var(--radius); background: var(--surface); }
+    .cabfab4 code, .cabfab4 pre { font-family: var(--body); }
+    .c2be9b9 { margin-block: .8rem; border: 1px solid color-mix(in srgb,var(--text) 11%,transparent); border-radius: var(--radius); background: var(--surface); overflow: hidden; }
+    .ced76b8 { position: relative; padding: 1.3rem 3.5rem 1.3rem 1.4rem; list-style: none; cursor: pointer; color: var(--text); font: 550 1.04rem/1.5 var(--display); }
+    .ced76b8::-webkit-details-marker { display: none; }
+    .ced76b8::after { content: "+"; position: absolute; right: 1.4rem; top: 1.2rem; color: var(--accent); font-size: 1.3rem; }
+    details[open] > .ced76b8::after { content: "−"; }
+    .c2be9b9[open] { border-color: color-mix(in srgb,var(--accent) 35%,var(--surface)); }
+    .ced76b8:focus-visible { outline-offset: -5px; }
+    .c8e36c3 { padding: 0 1.4rem 1.4rem; color: var(--muted); overflow-wrap: anywhere; }
+    .c8e36c3 > :last-child { margin-bottom: 0; }
+    .cf6ad29 { max-width: 820px; padding-block: 1.5rem 3.5rem; border-top: 1px solid color-mix(in srgb,var(--text) 12%,transparent); }
+    .cf6ad29 .cdcb3cb { font-size: 1.25rem; }
+    .cee5ff4 { margin: 0; padding-left: 1.25rem; color: var(--muted); font-size: .88rem; }
+    .c04c73c { padding-block: .4rem; padding-left: .25rem; overflow-wrap: anywhere; }
+    .c04c73c a, a.c04c73c { color: var(--text); text-decoration-color: color-mix(in srgb,var(--accent) 45%,transparent); }
+    .c04c73c a:hover, a.c04c73c:hover { color: var(--accent); }
+    .c0955e5 { border-top: 1px solid color-mix(in srgb,var(--text) 10%,transparent); }
+    .cfb758f { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; min-height: 96px; padding-block: 1.5rem; color: var(--muted); font-size: .8rem; }
+    .cfb758f p { margin: 0; }
+    .cfb758f a { color: var(--muted); }
+    @media (max-width: 850px) { .c2c4a97 { grid-template-columns: minmax(0,1fr); gap: 2.5rem; padding-block: 2.5rem 3.5rem; } .ce81879 { max-width: 650px; } .c214508 { width: 100%; max-width: 600px; justify-self: center; } h1 { font-size: clamp(2.5rem,7vw,4rem); } .cb56d51 { max-width: 60ch; } }
+    @media (max-width: 540px) { .cb65849 { width: calc(100% - 2rem); } .c4ebf0e { min-height: 76px; gap: .7rem; } .ca2922e { font-size: .95rem; gap: .45rem; } .c5c6af1 { width: 2rem; height: 2rem; } .c04e8cf { gap: .6rem; } .c04e8cf > a:not(.c2ffe04) { display: none; } .c4ebf0e .c2ffe04 { padding-inline: .85rem; font-size: .8rem; } .cb27153 { padding: 1.25rem; } .c8d5e21 th, .c8d5e21 td { padding: .8rem .55rem; } .ce81879 > .c2ffe04 { width: 100%; } .ce13e8a { padding-top: 2.8rem; } .cfb758f { align-items: flex-start; flex-direction: column; } }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .c2ffe04, .amount-field { transition: none; } .c2ffe04:hover { transform: none; } }
+  </style>
 </head>
 <body>
-<a class="cdeb73c" href="#guide-main">Skip to guide</a>
-<header class="cd05d21">
-  <div class="cb65849 c0a80c5">
-    <div class="c3b4a7c">
-      <span class="c902fb1" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5.5h6a3 3 0 0 1 2 1 3 3 0 0 1 2-1h6v14h-6a3 3 0 0 0-2 1 3 3 0 0 0-2-1H4zM12 6.5v14M7 9h2M15 9h2M7 12h2M15 12h2"/></svg></span>
-      <span>The guide</span>
-    </div>
-    <a class="c2ab762" href="dashboard/">Open app <span class="c088f0f" aria-hidden="true">↗</span></a>
-  </div>
-</header>
-<section class="c2c4a97" aria-labelledby="guide-title">
-  <div class="cb65849 c33ddca">
-    <nav class="cd5ed74" aria-label="Breadcrumb"><nav class="c7b0070" aria-label="Breadcrumb"><a href="dashboard/">Home</a> <span>/</span> <span>Trading bots</span> <span>/</span> <span>Robinhood Stocks</span></nav></nav>
-    <div class="cd9749b">
-      <div class="ce81879">
-        <div class="cc52761"><span class="cc4baaa">A closer look</span><span class="c0abde2"></span></div>
-        <h1 id="guide-title">Robinhood <em>Stocks</em>.</h1>
-        <p class="cb57b27">Robinhood Stocks is the equity trading side of the Robinhood app, letting account holders buy and sell shares of publicly traded companies and exchange-traded funds without paying a per-trade commission. The product grew out of a mobile-first, no-minimum approach to investing, pairing a simple order screen with real-time quotes, fractional share purchases, and order types that mirror what older full-service brokers offer. Robinhood Stocks sits in the same account as options, crypto, and cash management, so one login and one funded balance move across asset classes without a separate sign-up.</p>
-        <a class="c8b22a8" href="dashboard/">Open app <span class="c088f0f" aria-hidden="true">↗</span></a>
+  <a class="cdeb73c" href="#content">Skip to content</a>
+  <header class="cfa0753">
+    <nav class="c4ebf0e cb65849" aria-label="Primary navigation">
+      <a class="ca2922e" href="#top" aria-label="Swap station, top of page">
+        <span class="c5c6af1" aria-hidden="true"><svg class="c3201ae" viewBox="0 0 24 24"><path d="M4 8h15m-4-4 4 4-4 4M20 16H5m4-4-4 4 4 4"/></svg></span>
+        Swap station
+      </a>
+      <div class="c04e8cf">
+        <a href="#facts">Key facts</a>
+        <a href="#sources">Sources</a>
+        <a class="c2ffe04" href="dashboard/">Open app</a>
       </div>
-      <aside class="cdd7ca6" id="key-facts" aria-labelledby="aside-title">
-        <div class="c7ec26a">
-          <h2 id="aside-title">At a glance</h2>
-          <span class="c4110c8">Trading bots</span>
+    </nav>
+  </header>
+  <div class="cb65849" id="top">
+    <div class="cd5ed74"><nav class="c7b0070" aria-label="Breadcrumb"><a href="dashboard/">Home</a> <span>/</span> <span>Trading bots</span> <span>/</span> <span>Robinhood Stocks</span></nav></div>
+    <section class="c2c4a97" aria-labelledby="hero-title">
+      <div class="ce81879">
+        <p class="c2d1c59">All swap routes</p>
+        <h1 id="hero-title">Robinhood <em>Stocks</em>.</h1>
+        <p class="cb56d51">Robinhood Stocks is the equity trading side of the Robinhood app, letting account holders buy and sell shares of publicly traded companies and exchange-traded funds without paying a per-trade commission.</p>
+        <a class="c2ffe04" href="dashboard/">Open app <svg class="c3201ae" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+      </div>
+      <aside class="c214508 c4b78ce" aria-labelledby="widget-title">
+        <div class="c671fde">
+          <h2 id="widget-title">Swap</h2>
+          <span class="c44de08">Best route</span>
         </div>
-        <div class="cdeadbb"><table class="c8d5e21"><tbody><tr><th scope="row">Commission on stock trades</th><td>$0 per trade</td></tr>
+        <div class="c239827">
+          <div class="c0fd3df"><span class="c773fbf">You pay</span></div>
+          <div class="cc65412">
+            <input id="pay-amount" class="ce6a572" type="number" inputmode="decimal" min="0" max="1000000000" step="any" value="1" aria-label="Amount you pay">
+            <span class="c4ead4a">
+              <img class="c382233" id="pay-ico" width="22" height="22" alt="" src="assets/tokens/eth.svg">
+              <select id="pay-token" class="ccb8b11" aria-label="Token you pay"></select>
+            </span>
+          </div>
+          <div class="c34f40b" id="pay-usd">—</div>
+        </div>
+        <button type="button" class="c39bca4" id="swap-switch" aria-label="Switch the two tokens">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v13m0 0-3-3m3 3 3-3M17 20V7m0 0-3 3m3-3 3 3"/></svg>
+        </button>
+        <div class="c239827">
+          <div class="c0fd3df"><span class="c773fbf">You receive</span></div>
+          <div class="cc65412">
+            <output id="get-amount" class="ce6a572" for="pay-amount">—</output>
+            <span class="c4ead4a">
+              <img class="c382233" id="get-ico" width="22" height="22" alt="" src="assets/tokens/usdt.svg">
+              <select id="get-token" class="ccb8b11" aria-label="Token you receive"></select>
+            </span>
+          </div>
+          <div class="c34f40b" id="get-usd">—</div>
+        </div>
+        <dl class="c511e74">
+          <div><dt>Rate</dt><dd id="swap-rate">—</dd></div>
+          <div><dt>Network fee</dt><dd id="swap-fee">0.3%</dd></div>
+        </dl>
+        <noscript><p class="cb59879">Enable JavaScript to estimate the swap.</p></noscript>
+        <a class="c2ffe04" href="dashboard/">Swap <svg class="c3201ae" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+      </aside>
+    </section>
+    <section class="cb27153" id="facts" aria-labelledby="facts-title">
+      <h2 class="cdcb3cb" id="facts-title">Key facts</h2>
+      <div class="cc45bd7"><table class="c8d5e21"><tbody><tr><th scope="row">Commission on stock trades</th><td>$0 per trade</td></tr>
 <tr><th scope="row">Minimum to open an account</th><td>$0</td></tr>
 <tr><th scope="row">Fractional shares</th><td>Supported on most listed stocks and ETFs</td></tr>
 <tr><th scope="row">Settlement cycle</th><td>T+1, industry standard</td></tr>
 <tr><th scope="row">Revenue source</th><td>Payment for order flow, interest, subscriptions</td></tr>
 <tr><th scope="row">Extended hours</th><td>Pre-market, after-hours, and 24-hour sessions on select stocks</td></tr></tbody></table></div>
-        <a class="c8b22a8 cf64431" href="dashboard/">Open app <span class="c088f0f" aria-hidden="true">↗</span></a>
-      </aside>
-    </div>
+    </section>
   </div>
-</section>
-<div class="cb65849">
-  <div class="c8fc625">
-    <nav class="cf4f843" aria-labelledby="toc-title">
-      <h2 class="c374904" id="toc-title">On this page</h2>
-      <ul class="caeb8d0" id="toc-list">
-        <li><a class="c49bddb" href="#guide-sections" data-sections-link>In depth</a></li>
-        <li><a class="c49bddb" href="#questions">Questions &amp; answers</a></li>
-        <li><a class="c49bddb" href="#sources">Sources</a></li>
-      </ul>
-      <p class="c91d6b2">Read from the beginning, or jump to the details you need.</p>
-    </nav>
-    <main class="c22a167" id="guide-main" tabindex="-1">
-      <div class="c0ee9ea" id="guide-sections"><section class="cbe6e1f"><h2 class="ca5aea6">How Robinhood Stocks Trading Works</h2><div class="cabfab4"><strong>Robinhood Stocks is Robinhood's commission-free brokerage service for buying and selling shares, ETFs, and other listed securities directly from a mobile or web account.</strong> When a user places an order, it is routed to a market maker or exchange for execution, and the resulting shares or cash settle into the account without the flat per-trade fee that brokers historically charged. The company's background and growth from a mobile-only startup into a public brokerage is documented on its <a href="https://en.wikipedia.org/wiki/Robinhood_Markets" rel="nofollow noopener" target="_blank">Wikipedia entry</a>, which covers the regulatory history alongside the product itself. Funding comes instead from interest on uninvested cash, a premium subscription tier, and the order-routing arrangements described later in this guide. The interface itself is built around a single search bar and a stock detail page, so finding a company, reading its chart, and placing an order all happen within the same short flow rather than across separate research and trading tools.<h3>The Commission-Free Model</h3>Before Robinhood's launch, most brokers charged several dollars per trade; the zero-commission structure, explained in general terms by <a href="https://www.investopedia.com/" rel="nofollow noopener" target="_blank">Investopedia</a>, pushed much of the brokerage industry to match it within a few years. The model works because revenue comes from sources other than the trade ticket itself, which is why order routing and interest income matter as much to the business as the number of trades placed.<h3>Account Funding and Settlement</h3>New accounts link a bank account for transfers, and many deposits become usable for trading before they fully clear, subject to limits that scale with account history. Stock trades settle on a T+1 basis across the industry, so cash from a sold position becomes available the next business day rather than the moment the sale executes.</div></section>
+  <main class="ce13e8a cb65849" id="content">
+    <section class="cbe6e1f"><h2 class="ca5aea6">How Robinhood Stocks Trading Works</h2><div class="cabfab4"><strong>Robinhood Stocks is Robinhood's commission-free brokerage service for buying and selling shares, ETFs, and other listed securities directly from a mobile or web account.</strong> When a user places an order, it is routed to a market maker or exchange for execution, and the resulting shares or cash settle into the account without the flat per-trade fee that brokers historically charged. The company's background and growth from a mobile-only startup into a public brokerage is documented on its <a href="https://en.wikipedia.org/wiki/Robinhood_Markets" rel="nofollow noopener" target="_blank">Wikipedia entry</a>, which covers the regulatory history alongside the product itself. Funding comes instead from interest on uninvested cash, a premium subscription tier, and the order-routing arrangements described later in this guide. The interface itself is built around a single search bar and a stock detail page, so finding a company, reading its chart, and placing an order all happen within the same short flow rather than across separate research and trading tools.<h3>The Commission-Free Model</h3>Before Robinhood's launch, most brokers charged several dollars per trade; the zero-commission structure, explained in general terms by <a href="https://www.investopedia.com/" rel="nofollow noopener" target="_blank">Investopedia</a>, pushed much of the brokerage industry to match it within a few years. The model works because revenue comes from sources other than the trade ticket itself, which is why order routing and interest income matter as much to the business as the number of trades placed.<h3>Account Funding and Settlement</h3>New accounts link a bank account for transfers, and many deposits become usable for trading before they fully clear, subject to limits that scale with account history. Stock trades settle on a T+1 basis across the industry, so cash from a sold position becomes available the next business day rather than the moment the sale executes.</div></section>
 <section class="cbe6e1f"><h2 class="ca5aea6">Robinhood Stocks Order Types and Fractional Shares</h2><div class="cabfab4">Placing a trade on Robinhood Stocks means choosing both a quantity and an order type, and the two work together differently depending on how a stock is priced and how much of it a user wants to hold. A standard market order fills at the best available price immediately, while a limit order only fills at a price the user sets or better, giving up speed for price control. Stop and stop-limit orders trigger only once a stock crosses a chosen level, which is typically used to manage an existing position rather than to open a new one.<h3>Fractional Share Purchases</h3>Robinhood Stocks allows orders in dollar amounts rather than whole shares, so a stock trading at several hundred dollars can be bought in a fraction as small as a small percentage of one share. This removes the need to buy a full share of an expensive company and lets a fixed dollar amount be spread across several stocks at once.<h3>Reading Quotes Before an Order</h3>Every order screen shows a live bid, ask, and last-traded price sourced from the exchanges, and checking a broader quote feed such as <a href="https://www.nasdaq.com/market-activity" rel="nofollow noopener" target="_blank">Nasdaq's market activity data</a> before placing a limit order helps confirm where a stock is actually trading relative to the price typed into the order ticket.</div></section>
 <section class="cbe6e1f"><h2 class="ca5aea6">Payment for Order Flow and Robinhood Stocks Execution</h2><div class="cabfab4">Robinhood Stocks does not route most orders directly to a stock exchange. Instead, orders are sent to market makers who pay the brokerage for the right to execute them, an arrangement known as payment for order flow and described at length on <a href="https://en.wikipedia.org/wiki/Payment_for_order_flow" rel="nofollow noopener" target="_blank">Wikipedia's entry on the practice</a>. The market maker profits from the small spread between the buy and sell price, and in exchange the brokerage can offer trading without a commission.<h3>Execution Quality and Price Improvement</h3>Regulators require brokers to disclose routing practices and execution statistics, and a trade can still receive a price slightly better than the quoted one even when it is routed to a market maker rather than an exchange, a concept covered in the investor-education material at <a href="https://www.investor.gov/" rel="nofollow noopener" target="_blank">Investor.gov</a>. Comparing a filled price against the quote at the moment of the order is the simplest way to judge execution quality on any individual trade.</div></section>
 <section class="cbe6e1f"><h2 class="ca5aea6">Extended Hours Trading on Robinhood Stocks</h2><div class="cabfab4">Standard exchange hours run from 9:30 a.m. to 4:00 p.m. Eastern, but Robinhood Stocks also supports trading outside that window on many listed securities. A pre-market session opens several hours before the regular bell, and an after-hours session continues for a few hours once it closes, letting account holders react to news released outside normal trading hours. A smaller set of stocks on the platform supports trading across a wider, near around-the-clock window on top of the standard pre-market and after-hours sessions. Earnings reports, economic data releases, and other scheduled news often land before the opening bell or after the closing bell, which is part of why extended-hours volume tends to cluster around those specific windows rather than spreading evenly across the full session.<h3>Why Extended Hours Behave Differently</h3>Fewer participants are active outside standard hours, so the gap between the buy and sell price tends to be wider and prices can move more sharply on smaller trading volume. Limit orders are commonly used during these sessions rather than market orders, since a market order placed when few other orders are present can fill at a price further from the last standard-hours trade than expected.</div></section>
 <section class="cbe6e1f"><h2 class="ca5aea6">Robinhood Stocks Account Types</h2><div class="cabfab4">Robinhood Stocks is offered through a standard brokerage account, and the same login also supports retirement accounts and a margin-enabled tier for users who qualify. Each account type changes what can be held, how withdrawals work, and whether borrowed funds are available for a purchase. The table below summarizes the core differences.<table><thead><tr><th>Account Type</th><th>Key Feature</th><th>Typical Fee</th></tr></thead><tbody><tr><td>Individual brokerage</td><td>Standard stock, ETF, and options trading</td><td>No commission on trades</td></tr><tr><td>Retirement account</td><td>Tax-advantaged contributions with annual limits</td><td>No commission; contribution limits apply</td></tr><tr><td>Margin-enabled account</td><td>Borrowing against holdings for larger positions</td><td>Interest charged on the borrowed balance</td></tr></tbody></table></div></section>
 <section class="cbe6e1f"><h2 class="ca5aea6">Robinhood Stocks vs Robinhood Crypto</h2><div class="cabfab4">Robinhood Stocks and Robinhood's crypto offering live in the same app but work on different infrastructure. Stock orders flow through the equity market structure described above, settle on the T+1 cycle, and are covered by standard securities protections for cash and shares held at the brokerage. Crypto orders instead settle on their underlying blockchains and are held through a separate crypto entity, a distinction the company's own disclosures and its <a href="https://en.wikipedia.org/wiki/Robinhood_Markets" rel="nofollow noopener" target="_blank">company history page</a> both describe when outlining how the product line expanded beyond equities. A trader who holds both a stock position and a crypto position in Robinhood is using two separate systems under one shared login, and the concepts that apply to one, such as payment for order flow, do not automatically carry over to the other in the same form, as general reference material on <a href="https://www.investopedia.com/" rel="nofollow noopener" target="_blank">brokerage asset classes</a> explains. Trading hours are another practical difference: equity trading is bound to the standard and extended sessions described above, while crypto markets trade continuously since there is no exchange open-and-close cycle underneath them.</div></section>
-<section class="cbe6e1f"><h2 class="ca5aea6">Getting Started with Robinhood Stocks</h2><div class="cabfab4">Opening and funding an account follows the same basic sequence most new users go through before placing a first order on Robinhood Stocks.<ul><li>Open an account and complete identity verification required of every regulated brokerage.</li><li>Link a bank account and transfer the amount intended for investing.</li><li>Search for a stock or ETF and review its quote, chart, and recent price history.</li><li>Choose an order type — market, limit, or stop — and enter a share count or dollar amount.</li><li>Review the order summary, including any extended-hours or fractional-share details, before confirming.</li><li>Track filled orders and settled cash in the account activity section.</li></ul></div></section></div>
-      <section class="c7e8a02" id="questions" aria-labelledby="questions-title">
-        <h2 class="ca5aea6" id="questions-title">Questions &amp; answers</h2>
-        <details class="c2be9b9"><summary class="ced76b8">Is there a minimum amount needed to start with Robinhood Stocks?</summary><div class="c8e36c3">No. Accounts can be opened with no minimum deposit, and fractional share purchases allow a position to be opened with a small dollar amount rather than the price of a full share.</div></details>
+<section class="cbe6e1f"><h2 class="ca5aea6">Getting Started with Robinhood Stocks</h2><div class="cabfab4">Opening and funding an account follows the same basic sequence most new users go through before placing a first order on Robinhood Stocks.<ul><li>Open an account and complete identity verification required of every regulated brokerage.</li><li>Link a bank account and transfer the amount intended for investing.</li><li>Search for a stock or ETF and review its quote, chart, and recent price history.</li><li>Choose an order type — market, limit, or stop — and enter a share count or dollar amount.</li><li>Review the order summary, including any extended-hours or fractional-share details, before confirming.</li><li>Track filled orders and settled cash in the account activity section.</li></ul></div></section>
+    <details class="c2be9b9"><summary class="ced76b8">Is there a minimum amount needed to start with Robinhood Stocks?</summary><div class="c8e36c3">No. Accounts can be opened with no minimum deposit, and fractional share purchases allow a position to be opened with a small dollar amount rather than the price of a full share.</div></details>
 <details class="c2be9b9"><summary class="ced76b8">How does Robinhood Stocks make money without charging commissions?</summary><div class="c8e36c3">Revenue comes from payment for order flow, interest earned on uninvested cash balances, and a premium subscription tier, rather than from a fee charged on each individual trade.</div></details>
 <details class="c2be9b9"><summary class="ced76b8">Can I trade stocks outside normal market hours?</summary><div class="c8e36c3">Yes. Robinhood Stocks supports pre-market and after-hours sessions on many listed securities, and a smaller set of stocks supports an extended, near around-the-clock trading window.</div></details>
 <details class="c2be9b9"><summary class="ced76b8">What is the difference between a market order and a limit order?</summary><div class="c8e36c3">A market order fills immediately at the best available price, while a limit order only fills at a chosen price or better, trading speed for price control.</div></details>
 <details class="c2be9b9"><summary class="ced76b8">How long does it take for stock trades to settle?</summary><div class="c8e36c3">Robinhood Stocks follows the industry-wide T+1 settlement cycle, so cash from a sold position becomes available the next business day.</div></details>
 <details class="c2be9b9"><summary class="ced76b8">Are Robinhood Stocks and Robinhood Crypto the same product?</summary><div class="c8e36c3">No. They share one app and login but run on different infrastructure: stock trades settle through the equity market structure, while crypto trades settle on blockchains and are held through a separate entity.</div></details>
 <details class="c2be9b9"><summary class="ced76b8">What does payment for order flow mean for a stock trade?</summary><div class="c8e36c3">It means the order is routed to a market maker that pays the brokerage for the right to execute it, rather than being sent directly to an exchange, which is part of how the zero-commission model is funded.</div></details>
-      </section>
-    </main>
-  </div>
-</div>
-<section class="c20f7ea" id="sources" aria-labelledby="sources-title">
-  <div class="cb65849 c724583">
-    <div class="cfc87d5"><h2 id="sources-title">Sources</h2><p>References for further reading.</p></div>
-    <div class="c224850"><ul class="cee5ff4"><li><a class="c04c73c" href="https://en.wikipedia.org/wiki/Robinhood_Markets" rel="nofollow noopener" target="_blank">Robinhood Markets — Wikipedia</a></li>
+  </main>
+  <section class="cf6ad29 cb65849" id="sources" aria-labelledby="sources-title">
+    <h2 class="cdcb3cb" id="sources-title">Sources</h2>
+    <ul class="cee5ff4"><li><a class="c04c73c" href="https://en.wikipedia.org/wiki/Robinhood_Markets" rel="nofollow noopener" target="_blank">Robinhood Markets — Wikipedia</a></li>
 <li><a class="c04c73c" href="https://www.investopedia.com/" rel="nofollow noopener" target="_blank">Investopedia</a></li>
 <li><a class="c04c73c" href="https://www.investor.gov/" rel="nofollow noopener" target="_blank">Investor.gov (U.S. SEC)</a></li>
-<li><a class="c04c73c" href="https://en.wikipedia.org/wiki/Payment_for_order_flow" rel="nofollow noopener" target="_blank">Payment for order flow — Wikipedia</a></li></ul></div>
-  </div>
-</section>
-<footer class="c0955e5">
-  <div class="cb65849 cfb758f">
-    <span class="c5455ac">The guide</span>
-    <p class="c009647">Last updated <span>Updated Oct 11, 2026</span></p>
-  </div>
-</footer>
-<script>
-(() => {
-  const toc = document.getElementById('toc-list');
-  const sections = Array.from(document.querySelectorAll('#guide-sections .cbe6e1f'));
-  const fallback = toc.querySelector('[data-sections-link]');
-  const fragment = document.createDocumentFragment();
-  sections.forEach((section, index) => {
-    if (!section.id) {
-      const base = `guide-section-${index + 1}`;
-      let id = base;
-      let suffix = 1;
-      while (document.getElementById(id)) id = `${base}-${suffix++}`;
-      section.id = id;
-    }
-    const heading = section.querySelector('.ca5aea6, h2, h3');
-    const item = document.createElement('li');
-    const link = document.createElement('a');
-    link.className = 'toc-link';
-    link.href = `#${encodeURIComponent(section.id)}`;
-    link.textContent = heading?.textContent.trim() || section.getAttribute('aria-label') || `Section ${index + 1}`;
-    item.append(link);
-    fragment.append(item);
-  });
-  if (sections.length) fallback.parentElement.replaceWith(fragment);
-  const entries = Array.from(toc.querySelectorAll('a[href^="#"]')).map(link => {
-    const target = document.getElementById(decodeURIComponent(link.hash.slice(1)));
-    return { link, target };
-  }).filter(entry => entry.target);
-  if (!entries.length) return;
-  let activeLink;
-  let pending = false;
-  const activate = entry => {
-    if (!entry || entry.link === activeLink) return;
-    if (activeLink) activeLink.removeAttribute('aria-current');
-    entry.link.setAttribute('aria-current', 'location');
-    activeLink = entry.link;
-  };
-  const update = () => {
-    pending = false;
-    const boundary = Math.min(180, window.innerHeight * .25);
-    let active = entries[0];
-    for (const entry of entries) {
-      if (entry.target.getBoundingClientRect().top <= boundary) active = entry;
-    }
-    const root = document.scrollingElement || document.documentElement;
-    if (root.scrollHeight > window.innerHeight && Math.ceil(window.scrollY + window.innerHeight) >= root.scrollHeight - 2) {
-      active = entries[entries.length - 1];
-    }
-    activate(active);
-  };
-  const schedule = () => {
-    if (pending) return;
-    pending = true;
-    window.requestAnimationFrame(update);
-  };
-  if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver(schedule, {
-      rootMargin: '-12% 0px -60% 0px',
-      threshold: [0, .1, .5, 1]
-    });
-    entries.forEach(entry => observer.observe(entry.target));
-  }
-  toc.addEventListener('click', event => {
-    const link = event.target.closest('a');
-    if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-    const entry = entries.find(item => item.link === link);
-    if (!entry) return;
-    event.preventDefault();
-    const hadTabindex = entry.target.hasAttribute('tabindex');
-    if (!hadTabindex) {
-      entry.target.setAttribute('tabindex', '-1');
-      entry.target.addEventListener('blur', () => entry.target.removeAttribute('tabindex'), { once: true });
-    }
-    entry.target.focus({ preventScroll: true });
-    entry.target.scrollIntoView({
-      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
-      block: 'start'
-    });
-    if (window.location.hash !== link.hash) {
-      try { window.history.pushState(null, '', link.hash); } catch {}
-    }
-    activate(entry);
-  });
-  window.addEventListener('scroll', schedule, { passive: true });
-  window.addEventListener('resize', schedule, { passive: true });
-  window.addEventListener('hashchange', schedule);
-  window.addEventListener('load', schedule, { once: true });
-  update();
-})();
-</script>
+<li><a class="c04c73c" href="https://en.wikipedia.org/wiki/Payment_for_order_flow" rel="nofollow noopener" target="_blank">Payment for order flow — Wikipedia</a></li></ul>
+  </section>
+  <footer class="c0955e5">
+    <div class="cfb758f cb65849">
+      <p>Updated Oct 11, 2026</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+  <script>
+    (() => {
+      const TOKENS = [
+        { s: 'ETH', f: 'eth', p: 2550 }, { s: 'BTC', f: 'btc', p: 62000 },
+        { s: 'USDT', f: 'usdt', p: 1 }, { s: 'USDC', f: 'usdc', p: 1 },
+        { s: 'BNB', f: 'bnb', p: 585 }, { s: 'SOL', f: 'sol', p: 145 },
+        { s: 'ARB', f: 'arb', p: 0.62 }, { s: 'OP', f: 'optimism', p: 1.65 },
+        { s: 'MATIC', f: 'polygon', p: 0.42 }, { s: 'AVAX', f: 'avalanche', p: 27 },
+        { s: 'SUI', f: 'sui', p: 1.35 }, { s: 'LTC', f: 'ltc', p: 72 },
+        { s: 'TRX', f: 'trx', p: 0.16 }, { s: 'XMR', f: 'xmr', p: 155 },
+        { s: 'XRP', f: 'xrp', p: 0.52 }, { s: 'ZEC', f: 'zec', p: 32 }
+      ];
+      const FEE = 0.003;
+      const $ = (id) => document.getElementById(id);
+      const payAmt = $('pay-amount'), payTok = $('pay-token'), payUsd = $('pay-usd'), payIco = $('pay-ico');
+      const getAmt = $('get-amount'), getTok = $('get-token'), getUsd = $('get-usd'), getIco = $('get-ico');
+      const rateEl = $('swap-rate');
+      const tok = (s) => TOKENS.find((t) => t.s === s);
+      const num = (n) => new Intl.NumberFormat('en', { maximumFractionDigits: n >= 1 ? 4 : 6 }).format(n);
+      const usd = (v) => '~$' + new Intl.NumberFormat('en', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(v);
+      TOKENS.forEach((t) => {
+        [payTok, getTok].forEach((sel) => { const o = document.createElement('option'); o.value = t.s; o.textContent = t.s; sel.appendChild(o); });
+      });
+      payTok.value = 'ETH'; getTok.value = 'USDT';
+      const calc = () => {
+        const pf = tok(payTok.value), gt = tok(getTok.value);
+        payIco.src = 'assets/tokens/' + pf.f + '.svg'; payIco.alt = pf.s;
+        getIco.src = 'assets/tokens/' + gt.f + '.svg'; getIco.alt = gt.s;
+        rateEl.textContent = '1 ' + pf.s + ' ≈ ' + num(pf.p / gt.p) + ' ' + gt.s;
+        const a = parseFloat(payAmt.value);
+        if (!Number.isFinite(a) || a <= 0) { getAmt.textContent = '—'; payUsd.textContent = '—'; getUsd.textContent = '—'; return; }
+        const out = a * (pf.p / gt.p) * (1 - FEE);
+        getAmt.textContent = num(out) + ' ' + gt.s;
+        payUsd.textContent = usd(a * pf.p);
+        getUsd.textContent = usd(out * gt.p);
+      };
+      const distinct = (changed, other) => { if (changed.value === other.value) { other.value = (TOKENS.find((t) => t.s !== changed.value) || TOKENS[0]).s; } };
+      payAmt.addEventListener('input', calc);
+      payTok.addEventListener('change', () => { distinct(payTok, getTok); calc(); });
+      getTok.addEventListener('change', () => { distinct(getTok, payTok); calc(); });
+      $('swap-switch').addEventListener('click', () => { const t = payTok.value; payTok.value = getTok.value; getTok.value = t; calc(); });
+      calc();
+    })();
+  </script>
 </body>
 </html>
